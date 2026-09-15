@@ -11,5 +11,17 @@ export default function finalizeIssue(html) {
     'Henny owns Year 1. Dave B owns Year 2. For Year 3, the Gazette gives Zaddy Dan the smallest preseason edge because of depth and Chaos fit. Loose Endz, Dolly\'s Dolls and Love the Puca hate the game are right behind. Please remember that preseason predictions are free.'
   );
 
+  // Permanent navigation so every issue can reach the latest edition and the archive.
+  out = out.replace(
+    '<nav>',
+    '<nav aria-label="Issue navigation"><a href="/">Latest</a><a href="/archive">Archive</a>'
+  );
+
+  // A second archive link in the footer makes older issues easy to escape on mobile.
+  out = out.replace(
+    'Independent, noncommercial league publication<br>Managers identified by first name or league nickname only',
+    'Independent, noncommercial league publication<br>Managers identified by first name or league nickname only<br><a href="/archive" style="color:#f4efe4">Browse the archive</a>'
+  );
+
   return out;
 }
