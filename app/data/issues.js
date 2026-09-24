@@ -1,5 +1,19 @@
 export const issues = [
   {
+    slug: "week-2",
+    season: 2026,
+    volume: "Volume III",
+    issueLabel: "Issue 2",
+    type: "Week 2",
+    title: "Three Games by Five Points. Chaos Has Learned Precision.",
+    description:
+      "Week 2 brings an 8.2 Chaos Index, three games inside five points, injury fallout, a true bench crime, and three very different 2-0 teams.",
+    date: "2026-09-24",
+    displayDate: "September 24, 2026",
+    href: "/issues/2026/week-2",
+    status: "published",
+  },
+  {
     slug: "week-1",
     season: 2026,
     volume: "Volume III",

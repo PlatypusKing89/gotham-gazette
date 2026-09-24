@@ -1,16 +1,16 @@
-import { week1Css, week1Html } from './content/week1';
+import { week2Css, week2Html } from './content/week2';
 
 export const metadata = {
-  title: "Gotham Gazette | Week 1: Bobby's Juicemen Nearly Hit 300",
-  description: "Week 1 of the Gotham Gazette: Bobby nearly hits 300, the first Chaos Index lands at 6.6, and Gotham gets its first real look at the Chaos era.",
+  title: "Gotham Gazette | Week 2: Chaos Has Learned Precision",
+  description: "Week 2 of the Gotham Gazette: three close games, a Chaos Index of 8.2, injury fallout, and a 2-0 team winning with 124 points.",
   alternates: { canonical: "https://www.gothamgazette.fans/" },
 };
 
 export default function Page() {
   return (
     <>
-      <style dangerouslySetInnerHTML={{ __html: week1Css }} />
-      <div dangerouslySetInnerHTML={{ __html: week1Html }} />
+      <style dangerouslySetInnerHTML={{ __html: week2Css }} />
+      <div dangerouslySetInnerHTML={{ __html: week2Html }} />
     </>
   );
 }
