@@ -2,7 +2,7 @@ import { week1Css } from './week1';
 
 export const week2Css = week1Css;
 
-export const week2Html = String.raw\`
+export const week2Html = String.raw`
 <a class="skip" href="#main">Skip to the newspaper</a><div class="paper">
 <div class="proof"><strong>LATE EDITION:</strong> The Gazette was delayed because its publisher fled the country and is currently seeking asylum under the King's Crown. Buckingham Palace has not replied. Right then. Football.</div>
 <div class="utility"><span>Gotham City Fantasy Sports</span><span>Established 2024 · Chaos era 2026</span></div>
@@ -153,4 +153,4 @@ export const week2Html = String.raw\`
 </main>
 <footer><div><div class="brand">Gotham Gazette</div><div>Volume III · Issue 2 · Week 2</div></div><div>Fantasy data supplied by the editor from Yahoo Fantasy.<br>Managers identified by first name or league nickname only.<br><a href="/archive" style="color:#f4efe4">Browse the archive</a></div></footer>
 </div>
-\`;
+`;
