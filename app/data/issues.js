@@ -1,5 +1,19 @@
 export const issues = [
   {
+    slug: "week-3",
+    season: 2026,
+    volume: "Volume III",
+    issueLabel: "Issue 3",
+    type: "Week 3",
+    title: "The Undefeated Are Extinct. Seven Teams Want the Throne.",
+    description:
+      "Every 2-0 team loses, seven teams crowd the top at 2-1, the Chaos Index lands at 7.7, and Week 3 provides the season's clearest lesson about benches and projections.",
+    date: "2026-09-29",
+    displayDate: "September 29, 2026",
+    href: "/issues/2026/week-3",
+    status: "published",
+  },
+  {
     slug: "week-2",
     season: 2026,
     volume: "Volume III",
