@@ -1,5 +1,19 @@
 export const issues = [
   {
+    slug: "week-4",
+    season: 2026,
+    volume: "Volume III",
+    issueLabel: "Issue 4",
+    type: "Week 4 · October Edition",
+    title: "The Coven Forms at 3–1. Catyn Breaks the Curse.",
+    description:
+      "October arrives with three Boston Tea Party teams at 3-1, Catyn's 256.44-point first win, haunted benches, roster spellwork, and a season-high 8.9 Chaos Index.",
+    date: "2026-10-06",
+    displayDate: "October 6, 2026",
+    href: "/issues/2026/week-4",
+    status: "published",
+  },
+  {
     slug: "week-3",
     season: 2026,
     volume: "Volume III",

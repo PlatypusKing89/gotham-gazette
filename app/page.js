@@ -1,16 +1,16 @@
-import { week3Css, week3Html } from './content/week3';
+import { week4Css, week4Html } from './content/week4';
 
 export const metadata = {
-  title: "Gotham Gazette | Week 3: Seven Teams, One Throne",
-  description: "Week 3 of the Gotham Gazette: every 2-0 team loses, seven teams are tied at 2-1, the Chaos Index hits 7.7, and Gotham learns to check the bench.",
+  title: "Gotham Gazette | Week 4: The Coven Forms",
+  description: "Week 4 of the Gotham Gazette: three teams at 3-1, Catyn breaks the curse with 256.44, the benches are haunted, and October pushes the Chaos Index to 8.9.",
   alternates: { canonical: "https://www.gothamgazette.fans/" },
 };
 
 export default function Page() {
   return (
     <>
-      <style dangerouslySetInnerHTML={{ __html: week3Css }} />
-      <div dangerouslySetInnerHTML={{ __html: week3Html }} />
+      <style dangerouslySetInnerHTML={{ __html: week4Css }} />
+      <div dangerouslySetInnerHTML={{ __html: week4Html }} />
     </>
   );
 }
