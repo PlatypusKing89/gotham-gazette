@@ -1,5 +1,19 @@
 export const issues = [
   {
+    slug: "week-5",
+    season: 2026,
+    volume: "Volume III",
+    issueLabel: "Issue 5",
+    type: "Week 5",
+    title: "Overtime Kept Gotham Awake.",
+    description:
+      "Monday night keeps two matchups alive, Ben scores 294.33, Gotham beats its combined projection by 390.84 points, and the Chaos Index reaches a season-high 9.1.",
+    date: "2026-10-13",
+    displayDate: "October 13, 2026",
+    href: "/issues/2026/week-5",
+    status: "published",
+  },
+  {
     slug: "week-4",
     season: 2026,
     volume: "Volume III",
