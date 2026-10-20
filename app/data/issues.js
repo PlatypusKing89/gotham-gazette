@@ -1,5 +1,19 @@
 export const issues = [
   {
+    slug: "week-6",
+    season: 2026,
+    volume: "Volume III",
+    issueLabel: "Issue 6",
+    type: "Week 6",
+    title: "The Bye Weeks Arrived. Some Lineups Did Not.",
+    description:
+      "Week 6 turns into a lineup-management lesson: Catyn leaves multiple no-game starters active, George gets 40.15 from a waiver replacement, every Great Molasses team lands at 3-3, and the Rams need another kicker.",
+    date: "2026-10-20",
+    displayDate: "October 20, 2026",
+    href: "/issues/2026/week-6",
+    status: "published",
+  },
+  {
     slug: "week-5",
     season: 2026,
     volume: "Volume III",
@@ -19,7 +33,7 @@ export const issues = [
     volume: "Volume III",
     issueLabel: "Issue 4",
     type: "Week 4 · October Edition",
-    title: "The Coven Forms at 3–1. Catyn Breaks the Curse.",
+    title: "The Coven Forms at 3-1. Catyn Breaks the Curse.",
     description:
       "October arrives with three Boston Tea Party teams at 3-1, Catyn's 256.44-point first win, haunted benches, roster spellwork, and a season-high 8.9 Chaos Index.",
     date: "2026-10-06",
