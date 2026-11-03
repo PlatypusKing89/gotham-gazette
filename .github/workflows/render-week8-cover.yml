@@ -1,0 +1,42 @@
+name: Render Week 8 Gazette poster
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'public/week-8-stop-george.svg'
+      - '.github/workflows/render-week8-cover.yml'
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.12'
+      - name: Render and validate Week 8 PNG
+        run: |
+          python -m pip install --disable-pip-version-check cairosvg==2.7.1
+          python - <<'PY'
+          import pathlib
+          import cairosvg
+          source = pathlib.Path('public/week-8-stop-george.svg')
+          target = pathlib.Path('public/week-8-stop-george.png')
+          cairosvg.svg2png(bytestring=source.read_bytes(), write_to=str(target), output_width=1600, output_height=900)
+          with target.open('rb') as f:
+              assert f.read(8) == b'\x89PNG\r\n\x1a\n'
+          assert target.stat().st_size > 100000, 'Unexpectedly small PNG'
+          print('Rendered original Gazette cover at 1600 x 900:', target.stat().st_size, 'bytes')
+          PY
+      - name: Commit poster for social sharing
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/week-8-stop-george.png
+          git diff --cached --quiet && exit 0
+          git commit -m 'Render Week 8 Gazette cover PNG for social previews'
+          git pull --rebase origin main
+          git push origin HEAD:main
