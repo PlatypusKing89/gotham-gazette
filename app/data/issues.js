@@ -1,5 +1,11 @@
 export const issues = [
   {
+    slug: "week-8", season: 2026, volume: "Volume III", issueLabel: "Issue 8", type: "Week 8 · Election Day Villain-Origin Special",
+    title: "George, You Have Created a Monster.",
+    description: "The editor endorses Henny against George, Dave B wins by a record-setting 0.61, Pat survives Dan, and the Gazette's rooting-interest board puts George dead last.",
+    date: "2026-11-03", displayDate: "November 3, 2026", href: "/issues/2026/week-8", status: "published",
+  },
+  {
     slug: "week-7", season: 2026, volume: "Volume III", issueLabel: "Issue 7", type: "Week 7 · Editor-in-Chief Takeover",
     title: "Seven Starters. Eight Starters. Two Wins. I Quit.",
     description: "George and Catyn win with incomplete lineups and break the editor. A one-week Chaos Agents Board, all six recaps, bench receipts, waiver options, and Week 8 previews.",
