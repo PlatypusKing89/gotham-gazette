@@ -48,14 +48,14 @@ export default function ArchivePage() {
             <div className="eyebrow">The Morgue</div>
             <h1 id="archive-title">Every issue. Every bad prediction.</h1>
             <p>The permanent record of Gotham City Fantasy Sports, preserved so nobody can quietly pretend they never said that.</p>
-            <div className="count">{total} published issue{total === 1 ? "" : "s"}</div>
+            <div className="count">{total} published edition{total === 1 ? "" : "s"}</div>
           </section>
 
           {seasons.map((season) => (
             <section className="season" key={season} aria-labelledby={`season-${season}`}>
               <div className="season-head">
                 <h2 id={`season-${season}`}>{season} Season</h2>
-                <span>{issuesBySeason[season].length} issue{issuesBySeason[season].length === 1 ? "" : "s"}</span>
+                <span>{issuesBySeason[season].length} edition{issuesBySeason[season].length === 1 ? "" : "s"}</span>
               </div>
               <div className="grid">
                 {issuesBySeason[season].map((issue) => (
@@ -81,3 +81,4 @@ export default function ArchivePage() {
     </>
   );
 }
+

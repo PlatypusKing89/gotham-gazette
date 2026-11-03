@@ -1,10 +1,6 @@
 export const issues = [
-  {
-    slug: "week-8", season: 2026, volume: "Volume III", issueLabel: "Issue 8", type: "Week 8 · Election Day Villain-Origin Special",
-    title: "George, You Have Created a Monster.",
-    description: "The editor endorses Henny against George, Dave B wins by a record-setting 0.61, Pat survives Dan, and the Gazette's rooting-interest board puts George dead last.",
-    date: "2026-11-03", displayDate: "November 3, 2026", href: "/issues/2026/week-8", status: "published",
-  },
+  {"slug": "week-8-revised", "season": 2026, "volume": "Volume III", "issueLabel": "Week 8 Revised", "type": "Revised Edition", "title": "George, I Have Started Making Buttons.", "description": "Henny campaign buttons, a 0.61-point season record, Pat vs. Dan, and all twelve teams.", "date": "2026-11-03", "displayDate": "November 3, 2026", "href": "/issues/2026/week-8-revised", "status": "published"},
+  {"slug": "week-8-original", "season": 2026, "volume": "Volume III", "issueLabel": "Week 8 Original", "type": "Original Edition", "title": "George, You Have Created a Monster.", "description": "The original Week 8 Election Day issue, preserved alongside the revised edition.", "date": "2026-11-03", "displayDate": "November 3, 2026", "href": "/issues/2026/week-8-original", "status": "published"},
   {
     slug: "week-7", season: 2026, volume: "Volume III", issueLabel: "Issue 7", type: "Week 7 · Editor-in-Chief Takeover",
     title: "Seven Starters. Eight Starters. Two Wins. I Quit.",
@@ -60,3 +56,4 @@ export const issuesBySeason = issues.reduce((acc, issue) => {
   acc[issue.season].push(issue);
   return acc;
 }, {});
+

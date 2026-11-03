@@ -1,0 +1,149 @@
+{
+  "issue": {
+    "season": 2026,
+    "completed_week": 8,
+    "upcoming_week": 9,
+    "date": "2026-11-03",
+    "mode": "revised",
+    "published": false
+  },
+  "games": [
+    {
+      "a": "Pat",
+      "b": "Dan",
+      "score_a": "226.88",
+      "score_b": "221.75",
+      "margin": "5.13"
+    },
+    {
+      "a": "Henny",
+      "b": "Mike",
+      "score_a": "161.77",
+      "score_b": "146.59",
+      "margin": "15.18"
+    },
+    {
+      "a": "Dave C",
+      "b": "Catyn",
+      "score_a": "172.70",
+      "score_b": "87.91",
+      "margin": "84.79"
+    },
+    {
+      "a": "Farrar",
+      "b": "Bobby",
+      "score_a": "230.20",
+      "score_b": "119.12",
+      "margin": "111.08"
+    },
+    {
+      "a": "George",
+      "b": "Alex",
+      "score_a": "173.01",
+      "score_b": "146.82",
+      "margin": "26.19"
+    },
+    {
+      "a": "Dave B",
+      "b": "Ben",
+      "score_a": "188.73",
+      "score_b": "188.12",
+      "margin": "0.61"
+    }
+  ],
+  "projections": {
+    "Pat": "217.76",
+    "Dan": "205.37",
+    "Mike": "194.87",
+    "Henny": "187.37",
+    "Catyn": "172.67",
+    "Dave C": "161.13",
+    "Bobby": "175.43",
+    "Farrar": "220.18",
+    "George": "150.21",
+    "Alex": "156.36",
+    "Dave B": "183.86",
+    "Ben": "213.21"
+  },
+  "computed": {
+    "total": "2063.60",
+    "projected_total": "2238.42",
+    "all_play_wins": {
+      "Pat": 10,
+      "Dan": 9,
+      "Henny": 4,
+      "Mike": 2,
+      "Dave C": 5,
+      "Catyn": 0,
+      "Farrar": 11,
+      "Bobby": 1,
+      "George": 6,
+      "Alex": 3,
+      "Dave B": 8,
+      "Ben": 7
+    },
+    "projection_variance": {
+      "Pat": "9.12",
+      "Dan": "16.38",
+      "Henny": "-25.60",
+      "Mike": "-48.28",
+      "Dave C": "11.57",
+      "Catyn": "-84.76",
+      "Farrar": "10.02",
+      "Bobby": "-56.31",
+      "George": "22.80",
+      "Alex": "-9.54",
+      "Dave B": "4.87",
+      "Ben": "-25.09"
+    }
+  },
+  "board_type": "rooting-interest",
+  "board_order": [
+    "Henny",
+    "Catyn",
+    "Ben",
+    "Alex",
+    "Dan",
+    "Dave B",
+    "Farrar",
+    "Pat",
+    "Bobby",
+    "Mike",
+    "Dave C",
+    "George"
+  ],
+  "source_commit": "9b80e41ac4d1d33403ea9f16feafd3a6ed64b560",
+  "history_scope": "2026 Weeks 1-8; all 48 games",
+  "chaos": {
+    "components": [
+      9.5,
+      9.2,
+      8.6,
+      10.0
+    ],
+    "weighted": "9.36",
+    "display": "9.4"
+  },
+  "notes": [
+    "Final screenshot totals authoritative.",
+    "MNF account supplied by Pat.",
+    "Original content preserved unchanged."
+  ],
+  "publication": {
+    "status": "prepared; deployment receipt required",
+    "original_url": "/issues/2026/week-8-original",
+    "revised_url": "/issues/2026/week-8-revised"
+  },
+  "artwork": [
+    {
+      "path": "/week-8-buttons.webp",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "path": "/week-8-coaching-shredder.webp",
+      "width": 1536,
+      "height": 1024
+    }
+  ]
+}
