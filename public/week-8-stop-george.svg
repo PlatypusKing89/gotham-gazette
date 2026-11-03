@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">The Gotham Gazette Election Day special: The Editor vs. George</title>
+<desc id="desc">Vintage comic illustration of an angry robot newspaper editor promoting Henny while a crowned George, with an inactive quarterback and empty running back slot, dominates a Gotham City skyline.</desc>
+<defs>
+<linearGradient id="night" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101b2b"/><stop offset=".54" stop-color="#283047"/><stop offset="1" stop-color="#4a2637"/></linearGradient>
+<linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f7e8c7"/><stop offset="1" stop-color="#d5b98b"/></linearGradient>
+<linearGradient id="gold" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#f8d37e"/><stop offset="1" stop-color="#a87530"/></linearGradient>
+<pattern id="dots" width="17" height="17" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.8" fill="#efd5a8" opacity=".22"/></pattern>
+<pattern id="cross" width="19" height="19" patternUnits="userSpaceOnUse"><path d="M0 0L19 19M19 0L0 19" stroke="#000" stroke-opacity=".08" stroke-width="1"/></pattern>
+<filter id="shadow"><feDropShadow dx="6" dy="8" stdDeviation="4" flood-color="#000" flood-opacity=".5"/></filter>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".6" numOctaves="3" seed="5"/><feColorMatrix values="0 0 0 0 0.45 0 0 0 0 0.31 0 0 0 0 0.19 0 0 0 .12 0"/></filter>
+</defs>
+<rect width="1600" height="900" fill="#161d2b"/>
+<rect x="14" y="14" width="1572" height="872" fill="url(#night)" stroke="#dfb76e" stroke-width="8"/>
+<rect x="30" y="30" width="1540" height="840" fill="url(#dots)"/>
+<path d="M0 674L79 674 79 540 117 540 117 597 159 597 159 449 208 449 208 537 265 537 265 410 327 410 327 506 363 506 363 586 412 586 412 390 458 390 458 563 505 563 505 468 577 468 577 590 627 590 627 432 683 432 683 551 727 551 727 448 791 448 791 589 846 589 846 388 915 388 915 555 976 555 976 458 1025 458 1025 596 1073 596 1073 407 1152 407 1152 551 1193 551 1193 492 1248 492 1248 553 1295 553 1295 397 1354 397 1354 507 1425 507 1425 427 1470 427 1470 579 1539 579 1539 663 1600 663V900H0Z" fill="#0a1320" opacity=".93"/>
+<g fill="#ddbe82" opacity=".55"><rect x="184" y="472" width="12" height="18"/><rect x="288" y="435" width="12" height="19"/><rect x="650" y="471" width="10" height="14"/><rect x="879" y="428" width="14" height="20"/><rect x="1110" y="445" width="13" height="19"/><rect x="1329" y="448" width="13" height="21"/><rect x="1438" y="466" width="9" height="13"/></g>
+<g opacity=".48" stroke="#b5a2ac" stroke-width="3"><path d="M0 709L1600 709"/><path d="M0 740L1600 740"/></g>
+<rect x="45" y="44" width="1510" height="73" fill="#f3dfba" stroke="#191522" stroke-width="4"/>
+<text x="82" y="89" font-family="Georgia,serif" font-weight="900" font-size="40" fill="#1e1d25" letter-spacing="1.3">THE GOTHAM GAZETTE</text>
+<text x="1530" y="83" text-anchor="end" font-family="Arial,sans-serif" font-weight="900" font-size="22" fill="#8f2437" letter-spacing="2">NOVEMBER 3, 2026 | ISSUE 8</text>
+<text x="1530" y="108" text-anchor="end" font-family="Arial,sans-serif" font-size="14" font-weight="800" fill="#253249" letter-spacing="1.5">ELECTION DAY FANTASY SPECIAL</text>
+<rect x="62" y="139" width="1476" height="156" fill="#b52b3d" stroke="#f3d8a3" stroke-width="4" filter="url(#shadow)"/>
+<text x="800" y="220" text-anchor="middle" font-family="Impact,'Arial Black',sans-serif" font-size="116" font-weight="900" letter-spacing="6" fill="#fbe9cc">STOP GEORGE.</text>
+<text x="800" y="271" text-anchor="middle" font-family="Arial,sans-serif" font-weight="900" font-size="37" letter-spacing="9" fill="#ffe3a5">THE EDITOR HAS HAD ENOUGH.</text>
+<!-- ROBOT EDITOR LEFT -->
+<g transform="translate(105 336)">
+<path d="M75 322 Q-12 356 0 534 L359 534Q360 356 273 322" fill="#f0e8db" stroke="#101721" stroke-width="12"/>
+<path d="M54 370Q178 420 301 369L339 529H16Z" fill="#233b56" stroke="#121820" stroke-width="8"/>
+<path d="M147 335h80v72h-80z" fill="#b6bcc1" stroke="#1a2027" stroke-width="10"/>
+<rect x="50" y="53" rx="66" width="285" height="299" fill="#c4ccd1" stroke="#111b26" stroke-width="15"/>
+<rect x="67" y="93" rx="45" width="250" height="222" fill="#111c2d" stroke="#536170" stroke-width="12"/>
+<rect x="97" y="135" rx="22" width="74" height="80" fill="#e14048"/><rect x="214" y="135" rx="22" width="74" height="80" fill="#e14048"/>
+<path d="M112 164l46 34m0-34l-46 34m118-34l46 34m0-34l-46 34" stroke="#131d2a" stroke-width="9" stroke-linecap="round"/>
+<path d="M138 260Q190 239 238 259" stroke="#fae2b5" stroke-width="13" fill="none" stroke-linecap="round"/>
+<path d="M176 10v55" stroke="#abb8c7" stroke-width="12"/><circle cx="176" cy="12" r="22" fill="#da4154" stroke="#1b1b25" stroke-width="8"/>
+<path d="M75 351L-22 387 10 425 112 390M309 351L397 407 373 452 267 389" fill="#b8c0c7" stroke="#171c26" stroke-width="12"/>
+<path d="M98 442L271 443" stroke="#e7be72" stroke-width="7"/>
+<rect x="79" y="470" width="226" height="56" rx="8" fill="#f9d99e" stroke="#121820" stroke-width="6"/>
+<text x="192" y="504" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" font-weight="900" fill="#872337">EDITOR-IN-CHIEF</text>
+</g>
+<!-- EDITOR SPEECH -->
+<g transform="translate(423 335)" filter="url(#shadow)">
+<path d="M0 0H401V179H127L69 225 77 179H0Z" fill="url(#paper)" stroke="#17202d" stroke-width="9"/>
+<text x="200" y="58" text-anchor="middle" font-family="Georgia,serif" font-weight="900" font-size="33" fill="#a5263a">THIS IS MY</text>
+<text x="200" y="107" text-anchor="middle" font-family="Georgia,serif" font-weight="900" font-size="44" fill="#182132">VILLAIN</text>
+<text x="200" y="157" text-anchor="middle" font-family="Georgia,serif" font-weight="900" font-size="43" fill="#182132">ORIGIN STORY.</text>
+</g>
+<!-- GEORGE RIGHT -->
+<g transform="translate(1112 325)" filter="url(#shadow)">
+<path d="M20 410Q-12 490 0 545H366Q382 474 330 410Z" fill="#4d273c" stroke="#151520" stroke-width="10"/>
+<rect x="70" y="177" width="238" height="258" rx="78" fill="#273750" stroke="#151922" stroke-width="14"/>
+<path d="M79 268L34 385 91 418 146 303M297 270L345 383 293 413 229 307" fill="#29293b" stroke="#15171e" stroke-width="11"/>
+<path d="M86 218Q190 244 290 218" stroke="#e8c184" stroke-width="17"/>
+<circle cx="188" cy="124" r="114" fill="#ad765c" stroke="#131927" stroke-width="13"/>
+<path d="M78 79Q103-32 194 8Q283-22 305 80L291 112Q237 80 197 100Q121 80 83 111Z" fill="#171a24"/>
+<rect x="103" y="112" rx="17" width="86" height="54" fill="#101921"/><rect x="200" y="112" rx="17" width="86" height="54" fill="#101921"/><path d="M187 130h16" stroke="#101921" stroke-width="12"/>
+<path d="M113 174Q190 265 269 176Q253 272 186 275Q137 265 113 174" fill="#2f2428"/>
+<path d="M129 208Q191 232 248 203" stroke="#eed3a9" stroke-width="11" fill="none"/>
+<path d="M62 33L73-49 139-15 177-85 217-16 293-55 309 40Z" fill="url(#gold)" stroke="#161823" stroke-width="12"/>
+<circle cx="179" cy="-20" r="12" fill="#a82c45"/>
+<rect x="91" y="444" width="198" height="52" rx="7" fill="#f6dfb9" stroke="#131821" stroke-width="6"/>
+<text x="190" y="481" text-anchor="middle" font-size="37" font-family="Arial,sans-serif" font-weight="900" fill="#8b2639">GEORGE 6-2</text>
+</g>
+<!-- LEFT/RIGHT SCORE FLAGS -->
+<g transform="translate(840 336)">
+<rect width="260" height="65" fill="#f1d9ae" stroke="#1c1c27" stroke-width="7"/>
+<text x="130" y="43" text-anchor="middle" font-family="Arial,sans-serif" font-weight="900" font-size="27" fill="#9b283d">QB: NO GAME</text>
+<rect y="82" width="260" height="65" fill="#f1d9ae" stroke="#1c1c27" stroke-width="7"/>
+<text x="130" y="125" text-anchor="middle" font-family="Arial,sans-serif" font-weight="900" font-size="27" fill="#9b283d">RB2: EMPTY</text>
+<rect y="164" width="260" height="65" fill="#e4bd74" stroke="#1c1c27" stroke-width="7"/>
+<text x="130" y="207" text-anchor="middle" font-family="Arial,sans-serif" font-weight="900" font-size="29" fill="#152133">STILL WON.</text>
+</g>
+<!-- BOTTOM CAMPAIGN BANNER -->
+<path d="M50 739H1550V841H50Z" fill="#f3d6a0" stroke="#15202e" stroke-width="9"/>
+<rect x="64" y="752" width="1472" height="74" fill="#132c42"/>
+<text x="800" y="801" text-anchor="middle" font-family="Impact,'Arial Black',sans-serif" font-size="53" font-weight="900" letter-spacing="2" fill="#f6d79a">THE GAZETTE ENDORSES HENNY FOR WEEK 9</text>
+<text x="800" y="863" text-anchor="middle" font-family="Arial,sans-serif" font-weight="900" font-size="19" letter-spacing="4" fill="#f6d79a">ONE LEAGUE. TWELVE MANAGERS. ZERO MORE FREE PASSES.</text>
+<rect width="1600" height="900" fill="url(#cross)" opacity=".5"/>
+</svg>
