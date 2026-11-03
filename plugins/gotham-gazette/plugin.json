@@ -1,0 +1,29 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "gotham-gazette",
+  "version": "1.0.0",
+  "description": "Create and update Gotham Gazette weekly issues from Yahoo screenshots and editorial direction, with verified facts, league memory, original artwork, GitHub updates, and Vercel publishing.",
+  "author": {
+    "name": "Pat Gotham"
+  },
+  "extensions": {
+    "com.openai": {
+      "apps": "./.app.json",
+      "interface": {
+        "displayName": "Gotham Gazette",
+        "shortDescription": "Your weekly Chaos newspaper",
+        "longDescription": "Turn weekly Yahoo screenshots and Pat\u2019s narrative direction into a complete Gotham Gazette issue. Seven coordinated skills handle intake, analysis, writing, two original illustrations, publication through the existing GitHub and Vercel setup, corrections, and continuity. Works on demand; does not schedule runs, obtain Yahoo API access, or send email.",
+        "developerName": "Pat Gotham",
+        "category": "Entertainment",
+        "capabilities": [],
+        "logo": "./assets/icon.svg",
+        "composerIcon": "./assets/icon.svg",
+        "brandColor": "#8A1F2D",
+        "defaultPrompt": [
+          "Create this week\u2019s Gotham Gazette from my screenshots and story direction.",
+          "Revise the current Gazette issue and publish the changes."
+        ]
+      }
+    }
+  }
+}
