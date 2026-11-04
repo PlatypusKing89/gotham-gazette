@@ -1,0 +1,15 @@
+import Link from 'next/link';
+export default function Desk({e,archived=false}){return <main className="mid-shell">
+<div className="mid-strip"><span>GOTHAM GAZETTE / SPECIAL COVERAGE</span><span>Tuesday, November 3, 2026</span></div>
+<header className="mid-head"><span>THE MIDTERM DESK</span><h1>Gotham Gazette</h1><p>America votes. Massachusetts discovers geography.</p></header>
+<nav className="mid-nav"><Link href="/elections/2026">Latest election edition</Link><Link href="/elections/2026/archive">Election archive</Link><Link href="/">Fantasy Gazette homepage</Link></nav>
+<div className="mid-date"><b>${archived?"ARCHIVED SNAPSHOT / ":""}RESULTS RESEARCHED AS OF {e.time}</b> · {e.date}</div>
+<section className="mid-lead"><div className="mid-kicker">ELECTION NIGHT 2026</div><h2>{e.title}</h2><p>{e.dek}</p></section>
+<div className="mid-disclaimer"><b>READ THIS BEFORE THE MAP:</b> {e.notice}</div>
+<section className="mid-board"><div className="mid-title"><div className="mid-kicker">THE BIG BOARD</div><h2>Called. Watching. Still counting.</h2><p>Three separate sets of races. Nothing is colored as won on vibes alone.</p></div>
+<div className="mid-three">{e.board.map(b=><article key={b.office} className="mid-track"><h3>{b.office}</h3><div className="mid-sub">{b.sub}</div><div className="mid-count"><b>{b.summary}</b><small>{b.control}</small></div><ul>{b.watch.map(r=><li key={r.place}><a target="_blank" rel="noopener noreferrer" href={r.url}><b>{r.place}</b><em className={r.tone==="blue"?"mid-blue":"mid-gray"}>{r.status}</em></a><small>{r.detail}</small></li>)}</ul></article>)}</div>
+<p className="mid-footnote">Race calls are attributed to the named decision desk and are not certification. Senate chamber counts require existing seats and caucusing independents, not only the 35 races on the ballot. House majority: 218. See linked sources for complete real-time totals.</p></section>
+<section className="mid-change"><div className="mid-kicker">SINCE LAST EDITION</div><h2>What actually changed</h2><ul>{e.changes.map((t,i)=><li key={i}>{t}</li>)}</ul></section>
+<section className="mid-news"><div className="mid-kicker">SEVEN DISPATCHES</div><h2>The election-night reading list</h2><div className="mid-newsgrid">{e.stories.map((s,i)=><article className={i===0?"mid-mainstory":""} key={s.headline}><div className="mid-kicker">{s.tag}</div><h3>{s.headline}</h3>{s.p.map((p,j)=><p key={j}>{p}</p>)}<div className="mid-sources">Sources: {s.src.map(([name,url],k)=><span key={url}>{k?", ":""}<a href={url} target="_blank" rel="noopener noreferrer">{name}</a></span>)}</div></article>)}</div></section>
+<footer><p>Gotham Gazette • Midterm Desk • News and satire, clearly distinguished from race calls.</p><Link href="/elections/2026/archive">Election archive</Link> · <Link href="/">Regular Gotham Gazette</Link></footer>
+</main>}
