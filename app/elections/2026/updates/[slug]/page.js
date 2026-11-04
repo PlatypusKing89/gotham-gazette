@@ -1,4 +1,6 @@
-import {notFound} from 'next/navigation';import {editions,findEdition} from '../../data/editions';import Desk from '../../Desk';
-export function generateStaticParams(){return editions.map(e=>({slug:e.id}));}
-export async function generateMetadata({params}){const {slug}=await params;const e=findEdition(slug);return e?{title:e.title+' | Election Archive',description:e.dek,alternates:{canonical:'https://www.gothamgazette.fans/elections/2026/updates/'+slug}}:{}}
-export default async function Update({params}){const {slug}=await params;const e=findEdition(slug);if(!e)notFound();return <Desk e={e} archived/>}
+import {notFound} from 'next/navigation';
+import ElectionView from '../../ElectionView';
+import {editions,getEditionBySlug} from '../../data';
+export function generateStaticParams(){return editions.map(e=>({slug:e.slug}));}
+export async function generateMetadata({params}){const {slug}=await params;const e=getEditionBySlug(slug);if(!e)return {title:'Edition not found | Gotham Gazette'};const url='https://www.gothamgazette.fans/elections/2026/updates/'+slug;return {title:e.kind+' | Gotham Gazette Midterm Desk',description:e.deck,alternates:{canonical:url},openGraph:{title:e.headline,description:e.deck,url,type:'article'}};}
+export default async function EditionPage({params}){const {slug}=await params;const e=getEditionBySlug(slug);if(!e)notFound();return <ElectionView edition={e} editions={editions} permanent/>;}
