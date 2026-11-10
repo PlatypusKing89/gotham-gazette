@@ -1,3 +1,25 @@
-import {week8Css,week8Html} from './content/week8-revised';
-export const metadata = {"title": "Week 8 Revised | Gotham Gazette: George, I Have Started Making Buttons", "description": "Henny campaign buttons, Ben\u2019s 0.61-point heartbreak, Pat vs. Dan, all six games and the revised rooting board.", "alternates": {"canonical": "https://www.gothamgazette.fans/"}, "openGraph": {"title": "Week 8 Revised | Gotham Gazette: George, I Have Started Making Buttons", "description": "Henny campaign buttons, Ben\u2019s 0.61-point heartbreak, Pat vs. Dan, all six games and the revised rooting board.", "url": "https://www.gothamgazette.fans/", "images": [{"url": "https://www.gothamgazette.fans/week-8-buttons.webp", "width": 1536, "height": 1024, "alt": "Week 8 editorial illustration"}], "type": "website"}};
-export default function Page(){return <><style dangerouslySetInnerHTML={{__html:week8Css}}/><div dangerouslySetInnerHTML={{__html:week8Html}}/></>;}
+import { week9Css, week9Html } from './content/week9';
+export const metadata = {
+  "title": "Week 9 | Gotham Gazette: Farrar wins five straight and takes Dolly’s Dolls to the top of the division",
+  "description": "Farrar’s five-win run, the Monday-night household showdown, Pat’s 2,000-Point Club induction and playoff paths for all 12 teams.",
+  "alternates": {
+    "canonical": "https://www.gothamgazette.fans/"
+  },
+  "openGraph": {
+    "title": "Farrar wins five straight and takes Dolly’s Dolls to the top of the division",
+    "description": "Farrar’s five-win run, the Monday-night household showdown, Pat’s 2,000-Point Club induction and playoff paths for all 12 teams.",
+    "url": "https://www.gothamgazette.fans/",
+    "type": "article",
+    "images": [
+      {
+        "url": "https://www.gothamgazette.fans/week-9-farrar.webp",
+        "width": 1536,
+        "height": 1024,
+        "alt": "Five football dolls celebrate Farrar’s five straight wins"
+      }
+    ]
+  }
+};
+export default function Page() {
+  return <><style dangerouslySetInnerHTML={{ __html: week9Css }} /><div dangerouslySetInnerHTML={{ __html: week9Html }} /></>;
+}
