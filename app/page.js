@@ -1,25 +1,22 @@
-import { week9Css, week9Html } from './content/week9';
+import { week10Css, week10Html } from './content/week10';
 export const metadata = {
-  "title": "Week 9 | Gotham Gazette: Farrar wins five straight and takes Dolly’s Dolls to the top of the division",
-  "description": "Farrar’s five-win run, the Monday-night household showdown, Pat’s 2,000-Point Club induction and playoff paths for all 12 teams.",
+  "title": "Week 10 | Gotham Gazette: Love Wins. The Rest of Us Have Complaints.",
+  "description": "George and Dave C are engaged. Pat and Farrar face the sports desk. Dan and Farrar join the 2,000-Point Club.",
   "alternates": {
     "canonical": "https://www.gothamgazette.fans/"
   },
   "openGraph": {
-    "title": "Farrar wins five straight and takes Dolly’s Dolls to the top of the division",
-    "description": "Farrar’s five-win run, the Monday-night household showdown, Pat’s 2,000-Point Club induction and playoff paths for all 12 teams.",
+    "title": "Love Wins. The Rest of Us Have Complaints.",
     "url": "https://www.gothamgazette.fans/",
     "type": "article",
     "images": [
       {
-        "url": "https://www.gothamgazette.fans/week-9-farrar.webp",
+        "url": "https://www.gothamgazette.fans/week-10-love-wins.webp",
         "width": 1536,
         "height": 1024,
-        "alt": "Five football dolls celebrate Farrar’s five straight wins"
+        "alt": "Two engagement bands on a football playbook celebrating George and Dave"
       }
     ]
   }
 };
-export default function Page() {
-  return <><style dangerouslySetInnerHTML={{ __html: week9Css }} /><div dangerouslySetInnerHTML={{ __html: week9Html }} /></>;
-}
+export default function Page(){return <><style dangerouslySetInnerHTML={{__html:week10Css}}/><div dangerouslySetInnerHTML={{__html:week10Html}}/></>;}
