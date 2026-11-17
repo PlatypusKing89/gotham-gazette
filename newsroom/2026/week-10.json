@@ -4,7 +4,7 @@
     "week": 10,
     "upcoming_week": 11,
     "date": "2026-11-17",
-    "mode": "draft",
+    "mode": "published",
     "theme": "Love Wins. The Rest of Us Have Complaints."
   },
   "teams": {
@@ -204,8 +204,60 @@
   ],
   "available_players": null,
   "publication": {
-    "status": "approved for publication; deployment pending",
-    "route": "/issues/2026/week-10"
+    "status": "published and live verified",
+    "route": "/issues/2026/week-10",
+    "content_commit": "08fc6cbdb42eba139c9bfcfaf8026f9720cf863a",
+    "deployment_id": "dpl_9mH8C6V2jciXejt2ZCHi6ejazjTD",
+    "deployment_state": "READY",
+    "target": "production",
+    "branch": "main",
+    "canonical_alias": "www.gothamgazette.fans",
+    "checks": [
+      {
+        "path": "/",
+        "status": 200,
+        "type": "text/html; charset=utf-8",
+        "first_two": [
+          "Pass Rush David",
+          "Hail Mary George"
+        ]
+      },
+      {
+        "path": "/issues/2026/week-10",
+        "status": 200,
+        "type": "text/html; charset=utf-8",
+        "first_two": [
+          "Pass Rush David",
+          "Hail Mary George"
+        ]
+      },
+      {
+        "path": "/archive",
+        "status": 200,
+        "type": "text/html; charset=utf-8",
+        "new_archive_entries": 1
+      },
+      {
+        "path": "/week-10-love-wins.webp",
+        "status": 200,
+        "type": "image/webp",
+        "dimensions": [
+          1536,
+          1024
+        ]
+      },
+      {
+        "path": "/week-10-buttons.webp",
+        "status": 200,
+        "type": "image/webp",
+        "dimensions": [
+          1536,
+          1024
+        ]
+      }
+    ],
+    "build": "passed",
+    "responsive_visual_check": "not completed; browser launch restricted"
   },
   "board": {
     "type": "editorial rooting interest, not power rankings",
@@ -232,5 +284,11 @@
     "/week-10-love-wins.webp",
     "/week-10-buttons.webp"
   ],
-  "editorial_correction": "User-approved rooting board: Dave C first, George second, remaining teams retain relative order."
+  "editorial_correction": "User-approved rooting board: Dave C first, George second, remaining teams retain relative order.",
+  "chaos_components": {
+    "outcome_impact": 3,
+    "positional_volatility": 9,
+    "scoring_concentration": 8,
+    "unpredictability": 8
+  }
 }
