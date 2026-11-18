@@ -19,4 +19,4 @@ export const metadata = {
     ]
   }
 };
-export default function Page(){return <><style dangerouslySetInnerHTML={{__html:week10Css}}/><div dangerouslySetInnerHTML={{__html:week10Html}}/></>;}
+export default function Page(){return <><style dangerouslySetInnerHTML={{__html:week10Css}}/><a href="/playoffs" style={{display:"block",background:"#8a1f2d",color:"#fffaf1",fontFamily:"Arial,sans-serif",fontSize:"13px",fontWeight:"bold",padding:"14px 16px",textAlign:"center",letterSpacing:".05em"}}>NEW: THE CHAOS BOWL PLAYOFF LAB · PICK THE WINNERS, WRITE THE BRACKET →</a><div dangerouslySetInnerHTML={{__html:week10Html}}/></>;}
