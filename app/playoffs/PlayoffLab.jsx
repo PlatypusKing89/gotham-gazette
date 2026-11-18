@@ -75,6 +75,8 @@ export default function PlayoffLab(){
   const [pace,setPace]=useState(DEFAULT_PACE);
   const [post,setPost]=useState({});
   const [copied,setCopied]=useState("");
+  const [finding,setFinding]=useState(false);
+  const [pathNote,setPathNote]=useState(null);
   useEffect(()=>{
     try{
       const hash=window.location.hash;
@@ -119,6 +121,42 @@ export default function PlayoffLab(){
       return n;
     });setPost({});setCopied("");
   }
+  function findPath(){
+    setFinding(true);
+    window.setTimeout(()=>{
+      const free=GAMES.filter(g=>!picks[g.id]);
+      const working={...picks};
+      let answer=null;
+      function search(i){
+        if(i===free.length){
+          if(standings(working,pace,pointsMode,rule).seeds.some(t=>t.id===manager)){
+            answer={...working};
+            return true;
+          }
+          return false;
+        }
+        const g=free[i], a=TEAM[g.a], b=TEAM[g.b];
+        const favored=(g.a===manager||g.b===manager)?manager:
+          (a.w>b.w||(a.w===b.w&&a.pf>b.pf)?g.a:g.b);
+        const other=favored===g.a?g.b:g.a;
+        for(const candidate of [favored,other]){
+          working[g.id]=candidate;
+          if(search(i+1))return true;
+        }
+        delete working[g.id];
+        return false;
+      }
+      const possible=search(0);
+      if(possible){
+        setPicks(answer);
+        setPost({});
+        setPathNote({manager,signature:JSON.stringify(answer),status:"found",count:free.length});
+      }else{
+        setPathNote({manager,signature:JSON.stringify(picks),status:"none"});
+      }
+      setFinding(false);
+    },20);
+  }
   function autoFill(kind){
     const n={};
     for(const g of GAMES){
@@ -151,7 +189,7 @@ export default function PlayoffLab(){
       <div className="pl-newsbar"><span className="pl-live-dot">●</span> Week 10 is final. Weeks 11–13 are hypothetical. <a href="/issues/2026/week-10">Read the latest issue</a></div>
       <section className="pl-focus pl-paper">
         <div className="pl-focus-head"><div><div className="pl-eyebrow">THE FRONT-PAGE DESK</div><h2>Whose season are we ruining?</h2></div>
-        <div className="pl-picker"><label htmlFor="pl-manager">Choose your manager</label><select id="pl-manager" value={manager} onChange={e=>setManager(e.target.value)}>{TEAMS.map(t=><option key={t.id} value={t.id}>{t.id} · {t.name}</option>)}</select></div></div>
+        <div className="pl-picker"><label htmlFor="pl-manager">Choose your manager</label><select id="pl-manager" value={manager} onChange={e=>{setManager(e.target.value);setPathNote(null);}}>{TEAMS.map(t=><option key={t.id} value={t.id}>{t.id} · {t.name}</option>)}</select></div></div>
         <div className="pl-focus-grid">
           <div className="pl-focus-status"><div className="pl-eyebrow">{TEAM[manager].name} · {TEAM[manager].div}</div>
             <div className="pl-bigrecord">{selected.w}–{selected.l}</div><p>Scenario record</p>
@@ -159,7 +197,8 @@ export default function PlayoffLab(){
           </div>
           <div className="pl-focus-copy">
             <p>{unpickedTeamGames.length? "There are "+unpickedTeamGames.length+" games still undecided for "+manager+". Best possible finish from here: "+projectedMax+"–"+(13-projectedMax)+".":"All of "+manager+"'s remaining games have a winner in your scenario."}</p>
-            <div className="pl-shortcuts"><button type="button" onClick={()=>runTeam(manager,true)}>Make {manager} win out</button><button type="button" className="pl-outline" onClick={()=>runTeam(manager,false)}>Make {manager} lose out</button></div>
+            <div className="pl-shortcuts"><button type="button" onClick={()=>runTeam(manager,true)}>Make {manager} win out</button><button type="button" className="pl-outline" onClick={()=>runTeam(manager,false)}>Make {manager} lose out</button><button type="button" onClick={findPath} disabled={finding}>{finding?"Searching every route…":"🔎 Find me a playoff path"}</button></div>
+            {pathNote&&pathNote.manager===manager&&pathNote.signature===JSON.stringify(picks)&&<p className="pl-pathnote" role="status">{pathNote.status==="found"?"PATH FOUND: The lab filled "+pathNote.count+" undecided games with one route into the playoffs at these estimated tiebreak points. Try changing any result.":"NO QUALIFYING PATH FOUND under your locked picks and current points estimates. Change a result or scoring forecast. This is not an official elimination."}</p>}
             <p className="pl-muted">A predicted playoff spot is not a clinch. Points and division tiebreakers can change the result.</p>
           </div>
         </div>
